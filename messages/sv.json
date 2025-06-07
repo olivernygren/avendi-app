@@ -1,0 +1,15 @@
+{
+  "common": {
+    "loading": "Laddar...",
+    "error-try-again": "Ett fel uppstod. Försök igen senare.",
+    "success": "Åtgärden slutfördes framgångsrikt.",
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "delete": "Ta bort",
+    "edit": "Redigera",
+    "view": "Visa",
+    "confirm-proceed": "Är du säker på att du vill fortsätta?",
+    "yes": "Ja",
+    "no": "Nej"
+  }
+}

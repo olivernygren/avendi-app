@@ -1,0 +1,15 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error-try-again": "An error occurred. Please try again later.",
+    "success": "Operation completed successfully.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "confirm-proceed": "Are you sure you want to proceed?",
+    "yes": "Yes",
+    "no": "No"
+  }
+}
