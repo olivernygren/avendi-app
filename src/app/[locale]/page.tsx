@@ -8,9 +8,11 @@ export default function HomePage() {
     <Container maxW="5xl">
       <Stack>
         <Text fontSize="2xl" fontWeight="bold" mb={4}>
-          {t("yes")}
+          {t("avendi")}
         </Text>
-        <Button>{t("loading")}</Button>
+        <Button borderRadius={"lg"} loadingText={t("loading")}>
+          {t("save")}
+        </Button>
         <ColorModeButton />
       </Stack>
     </Container>

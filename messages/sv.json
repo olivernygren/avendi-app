@@ -1,5 +1,6 @@
 {
   "common": {
+    "avendi": "Avendi",
     "loading": "Laddar...",
     "error-try-again": "Ett fel uppstod. Försök igen senare.",
     "success": "Åtgärden slutfördes framgångsrikt.",

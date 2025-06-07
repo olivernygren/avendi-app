@@ -1,5 +1,6 @@
 {
   "common": {
+    "avendi": "Avendi",
     "loading": "Loading...",
     "error-try-again": "An error occurred. Please try again later.",
     "success": "Operation completed successfully.",
