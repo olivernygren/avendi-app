@@ -85,7 +85,7 @@ export async function updateSession(request: NextRequest) {
           return request.cookies.getAll();
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) =>
+          cookiesToSet.forEach(({ name, value }) =>
             request.cookies.set(name, value)
           );
           supabaseResponse = NextResponse.next({
@@ -109,7 +109,7 @@ export async function updateSession(request: NextRequest) {
   const basePublicPaths = ["/login", "/auth/callback"]; // Add any other public paths like /signup, /password-reset
 
   // Generate locale-prefixed public paths
-  let allPublicPaths = [...basePublicPaths];
+  const allPublicPaths = [...basePublicPaths];
   if (routing && routing.locales) {
     // Check if routing and locales are defined
     routing.locales.forEach((locale) => {
@@ -133,9 +133,7 @@ export async function updateSession(request: NextRequest) {
       routing.locales.find((loc) => pathname.startsWith(`/${loc}`)) ||
       routing.defaultLocale;
     const loginUrl = new URL(`/${currentLocale}/login`, request.url).toString(); // Adjust if your login path is different
-    console.log(
-      `[updateSession] User not authenticated, not on public path. Redirecting from ${pathname} to ${loginUrl}`
-    );
+
     return NextResponse.redirect(loginUrl);
   }
 
@@ -152,16 +150,11 @@ export async function updateSession(request: NextRequest) {
       routing.locales.find((loc) => pathname.startsWith(`/${loc}`)) ||
       routing.defaultLocale;
     const homeUrl = new URL(`/${currentLocale}/`, request.url).toString(); // Or e.g., /${currentLocale}/dashboard
-    console.log(
-      `[updateSession] User authenticated, on login page. Redirecting from ${pathname} to ${homeUrl}`
-    );
+
     return NextResponse.redirect(homeUrl);
   }
 
   // If no redirect is needed by Supabase logic, return the initial supabaseResponse
   // which allows next-intl to process.
-  console.log(
-    `[updateSession] No redirect needed by Supabase for path: ${pathname}`
-  );
   return supabaseResponse;
 }

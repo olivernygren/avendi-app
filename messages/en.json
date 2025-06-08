@@ -11,6 +11,25 @@
     "view": "View",
     "confirm-proceed": "Are you sure you want to proceed?",
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "sign-out": "Sign out",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close"
+  },
+  "auth-pages": {
+    "sign-in": "Sign in",
+    "sign-in-with-google": "Sign in with Google",
+    "signing-in": "Signing in...",
+    "form-description": "Please enter your credentials to access your account.",
+    "email": "Email",
+    "password": "Password",
+    "forgot-password": "Forgot your password?",
+    "login-error-email": "Ivalid email address.",
+    "login-error-email-empty": "Email is required",
+    "login-error-password": "Password must be at least 6 characters long.",
+    "login-error-password-empty": "Password is required",
+    "not-signed-up-yet": "Not signed up yet?",
+    "create-account": "Create account"
   }
 }

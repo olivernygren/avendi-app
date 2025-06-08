@@ -11,6 +11,25 @@
     "view": "Visa",
     "confirm-proceed": "Är du säker på att du vill fortsätta?",
     "yes": "Ja",
-    "no": "Nej"
+    "no": "Nej",
+    "sign-out": "Logga ut",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "close": "Stäng"
+  },
+  "auth-pages": {
+    "sign-in": "Logga in",
+    "sign-in-with-google": "Logga in med Google",
+    "signing-in": "Loggar in...",
+    "form-description": "Ange dina uppgifter för att logga in på ditt konto.",
+    "email": "E-post",
+    "password": "Lösenord",
+    "forgot-password": "Glömt ditt lösenord?",
+    "login-error-email": "Ogiltig e-postadress.",
+    "login-error-email-empty": "E-post krävs",
+    "login-error-password": "Lösenordet måste vara minst 6 tecken långt.",
+    "login-error-password-empty": "Lösenord krävs",
+    "not-signed-up-yet": "Inte registrerad än?",
+    "create-account": "Skapa konto"
   }
 }
